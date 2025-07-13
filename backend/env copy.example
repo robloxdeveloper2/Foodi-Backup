@@ -1,0 +1,10 @@
+FLASK_ENV=development
+FLASK_DEBUG=True
+SECRET_KEY=dev-secret-key-for-foodi-testing
+JWT_SECRET_KEY=jwt-secret-key-for-foodi-testing
+JWT_ACCESS_TOKEN_EXPIRES=3600
+DATABASE_URL=postgresql://postgres:password@localhost:5432/foodi_db 
+RATE_LIMIT_STORAGE_URL=memory://
+APP_NAME=Foodi
+FRONTEND_URL=http://localhost:3000
+MONGODB_URI=mongodb+srv://crag:RUMMI2FqHj5heQ4L@foodi-demo.eit03zp.mongodb.net/?retryWrites=true&w=majority&appName=foodi-demo
