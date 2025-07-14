@@ -1,0 +1,25 @@
+{
+    "functions": [
+      {
+        "source": "functions",
+        "codebase": "foodi-backend2ab",
+        "runtime": "python311"
+      }
+    ],
+    "hosting": {
+      "public": "frontend/flutter_application_1/build/web",
+      "rewrites": [
+        {
+          "source": "/api/**",
+          "function": {
+            "functionId": "foodi_api2ab",
+            "region": "us-central1"
+          }
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  }
